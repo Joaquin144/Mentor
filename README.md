@@ -42,12 +42,12 @@ Our team will design a mobile application, that will contain a proper guidance i
 <br>
 
 ## 🤩 Features
-- [x] Open Source Ed Tech Solution: Code is accessible to every one
-- [x] WhatsApp and SMS API Support
-- [x] Nice UI
-- [x] Video Lectures and Ebooks
-- [x] Firebase Authentication
-- [x] Built with 💖 by DevCommOp
+✅ Open Source Ed Tech Solution: Code is accessible to every one <br>
+✅ WhatsApp and SMS API Support <br>
+✅ Nice UI <br>
+✅ Video Lectures and Ebooks <br>
+✅ Firebase Authentication <br>
+✅ Built with 💖 by DevCommOp <br>
 
  
 ## YouTube Video Link:
