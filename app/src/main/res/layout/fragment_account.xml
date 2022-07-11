@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Fragments.fragment_account">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/linearTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@color/primary"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="16dp"
+            >
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:elevation="12dp"
+                android:fontFamily="@font/noto_sans"
+                android:text="My Account"
+                android:textAlignment="center"
+                android:textColor="@color/dark_grey_primary"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+           <ImageView
+               android:layout_width="64dp"
+               android:layout_height="64dp"
+               android:src="@drawable/new_dp"
+               app:tint="@color/dark_grey_primary"
+               android:layout_marginTop="8dp"
+
+
+               />
+
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/linearTop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:background="@drawable/round_bottom"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:paddingBottom="32dp"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            >
+
+
+                    <TextView
+                        android:id="@+id/userAcctName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="loading..."
+                        android:textColor="@color/dark_grey_primary"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/noto_sans"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/userAcctEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="loading..."
+                        android:textColor="@color/dark_grey_primary"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/noto_sans"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        />
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/linear1"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginTop="96dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:paddingBottom="32dp"
+    android:elevation="10dp"
+    android:orientation="vertical"
+
+    >
+
+        <LinearLayout
+            android:id="@+id/AccountLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_2"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+
+
+            >
+
+                <TextView
+                    android:id="@+id/acctSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Settings"
+                    android:textColor="#292637"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/noto_sans"
+                    android:textSize="16sp"
+                    android:drawableStart="@drawable/settings"
+                    android:drawablePadding="10dp"
+
+
+                    />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/shareLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_2"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            >
+
+                <TextView
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share this App"
+                    android:textColor="#292637"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/noto_sans"
+                    android:textSize="16sp"
+                    android:drawableStart="@drawable/share"
+                    android:drawablePadding="10dp"
+
+
+
+                    />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/aboutLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_2"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+
+            >
+
+                <TextView
+                    android:id="@+id/About"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Us"
+                    android:textColor="#292637"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/noto_sans"
+                    android:textSize="16sp"
+                    android:drawableTint="@color/dark_grey_primary"
+                    android:drawableStart="@drawable/contact"
+                    android:drawablePadding="10dp"
+
+
+                    />
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/logoutLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_2"
+        android:clickable="true"
+        android:elevation="10dp"
+        android:focusable="true"
+        android:padding="10dp"
+        android:foreground="?selectableItemBackground"
+
+        >
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/logout"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/noto_sans"
+            android:text="Logout"
+            android:textAlignment="center"
+            android:textColor="#292637"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:background="@color/white"
+
+
+            >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Made with ♥️ by team"
+                    android:textColor="@color/black"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MentOR">
+
+                </TextView>
+        </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

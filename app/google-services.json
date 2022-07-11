@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "581130731924",
+    "firebase_url": "https://hackathon-3505e-default-rtdb.firebaseio.com",
+    "project_id": "hackathon-3505e",
+    "storage_bucket": "hackathon-3505e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581130731924:android:e04c73a1a3b072140ecf81",
+        "android_client_info": {
+          "package_name": "com.ersubhadip.hackathon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581130731924-hmf5td8l414s3hh3h3t3jaqfuqn6rorc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTVgWvmIPNYfPBg7067VljRflAWwjbRbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581130731924-hmf5td8l414s3hh3h3t3jaqfuqn6rorc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

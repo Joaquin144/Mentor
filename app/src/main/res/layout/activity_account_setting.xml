@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AccountSettingActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        >
+
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="32dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="32dp"
+                android:text="ACCOUNT SETTINGS"
+                android:textColor="@color/dark_grey_primary"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:fontFamily="@font/noto_sans"
+                android:textSize="24sp"
+                android:id="@+id/text"
+                />
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/nameEt"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                app:layout_constraintTop_toBottomOf="@id/text"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColorHint="@color/grey_primary"
+                android:text="User_Name"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/noto_sans"
+                android:drawableStart="@drawable/user_final"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:drawablePadding="12dp"
+                android:background="@drawable/custom_et"
+                android:inputType="text"
+
+                />
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                app:layout_constraintTop_toBottomOf="@id/nameEt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColorHint="@color/grey_primary"
+                android:text="user@gmail.com"
+                android:textColor="@color/black"
+                android:backgroundTint="#DCD6D6"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/noto_sans"
+                android:drawableStart="@drawable/email_final"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:drawablePadding="12dp"
+                android:background="@drawable/custom_et"
+                android:inputType="textEmailAddress"
+                android:clickable="false"
+                android:focusable="false"
+
+                />
+            <EditText
+                android:id="@+id/oldPasswordEt"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                app:layout_constraintTop_toBottomOf="@id/emailEt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColorHint="@color/grey_primary"
+                android:hint="Enter Old password"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/noto_sans"
+                android:drawableStart="@drawable/lock_final"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:drawablePadding="12dp"
+                android:background="@drawable/custom_et"
+                android:inputType="textPassword"
+
+                />
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                app:layout_constraintTop_toBottomOf="@id/oldPasswordEt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColorHint="@color/grey_primary"
+                android:hint="Create New Password"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/noto_sans"
+                android:drawableStart="@drawable/lock_final"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:drawablePadding="12dp"
+                android:background="@drawable/custom_et"
+                android:inputType="textPassword"
+
+                />
+            <EditText
+                android:id="@+id/confirmPasswordEt"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                app:layout_constraintTop_toBottomOf="@id/passwordEt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:textColorHint="@color/grey_primary"
+                android:hint="Confirm password"
+                android:textColor="@color/black"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/noto_sans"
+                android:drawableStart="@drawable/lock_final"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:drawablePadding="12dp"
+                android:background="@drawable/custom_et"
+                android:inputType="textPassword"
+
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/SignUpBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/confirmPasswordEt"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="46dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:padding="8dp"
+                android:clickable="true"
+                android:text="SAVE CHANGES"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:background="@drawable/button"
+                android:fontFamily="@font/noto_sans"
+
+                android:elevation="4dp"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"
+
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

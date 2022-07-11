@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.WhatsappActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="196dp"
+        android:layout_height="240dp"
+        android:scaleType="fitXY"
+        android:id="@+id/animation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp"
+        android:visibility="visible"
+        app:lottie_rawRes="@raw/helpanim"
+        app:lottie_loop="false"
+        app:lottie_speed="0.4"
+        app:lottie_autoPlay="true"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/noto_sans"
+        android:text="What Type of help do you want?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/animation"
+        tools:ignore="HardcodedText" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textAlignment="center"
+        android:foreground="?selectableItemBackground"
+        android:fontFamily="@font/noto_sans"
+        android:text="Academics"
+        android:textColor="@color/ic_launcher_background"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="HardcodedText" />
+
+
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        android:fontFamily="@font/noto_sans"
+        android:textAlignment="center"
+        android:text="Financial"
+        android:textColor="#FF9800"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/linear_fields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textView5"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:paddingBottom="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:visibility="invisible"
+        >
+
+
+        <EditText
+            android:id="@+id/mera_phoneET"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:textColorHint="@color/grey_primary"
+            android:hint="Enter Your Number"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:fontFamily="@font/noto_sans"
+            android:drawableStart="@drawable/phone_final"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:drawablePadding="12dp"
+            android:background="@drawable/custom_et"
+            android:inputType="phone"
+            android:layout_gravity="center_horizontal"
+
+            tools:ignore="HardcodedText" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/apiSubmitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:padding="8dp"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/button"
+            android:fontFamily="@font/noto_sans"
+            android:elevation="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
