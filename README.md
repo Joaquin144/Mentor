@@ -8,18 +8,6 @@
 <img width="300px" height = "300px" src="https://user-images.githubusercontent.com/89024718/141686169-7b999712-0173-428a-8e86-e8a5b40cb34e.png" alt="cover" />
 </div>
 <br><br>
-
-## TEAM NAME:
-<h4>Gradle D-SyNc</h4>
- <br><br>
- 
-## TEAM MEMBERS:
-
-- <a href="https://github.com/Joaquin144" title="Click here" style="background-color:#FFFFFF;color:#000000;text-decoration:none">Vibhu Pandey</a>
-
-- <a href="https://github.com/Subhadiptech" title="Click here" style="background-color:#FFFFFF;color:#000000;text-decoration:none">Subhadip Das</a>
- 
-- <a href="https://github.com/RahulSoni0" title="Click here" style="background-color:#FFFFFF;color:#000000;text-decoration:none">Rahul Soni</a>
  
 
 <br><br>
