@@ -63,7 +63,7 @@ Our team will design a mobile application, that will contain a proper guidance i
 ```
 MIT License
 
-Copyright (c) 2021 Gradle D-SyNc [ DevCommOp ]
+Copyright (c) 2021 [ Vibhu @Joaquin144 ]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
